@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        QUẢN LÝ TUYỂN SINH
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Điểm môn thứ nhất</label>
+                            <input id="điemmon1" type="number" name="" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+
+
+                        </div>
+                        <div class="form-group">
+                            <label for="">Điểm môn thứ hai</label>
+                            <input id="điemmon2" type="number" name="" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+
+
+                        </div>
+                        <div class="form-group">
+                            <label for="">Điểm môn thứ ba</label>
+                            <input id="điemmon3" type="number" name="" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+
+
+                        </div>
+                        <div class="form-group">
+                            <label for="">Khu vực ưu tiên</label>
+                            <select id="khuvuc" class="form-control">
+                                <option value="2">A</option>
+                                <option value="1">B</option>
+                                <option value="0.5">C</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Đối tương ưu tiên</label>
+                            <select id="doituong" class="form-control">
+                                <option value="2.5">1</option>
+                                <option value="1.5">2</option>
+                                <option value="1">3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Điểm chuẩn</label>
+                            <input id="điemchuan" type="number" name="" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+
+
+                        </div>
+                    </div>
+
+                    <button id="btnTinhDiem" class="btn btn-danger">Tính Điểm </button>
+                </div>
+                <div id="footerTinhDiem" class="card-footer text-muted">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        TÍNH TIỀN ĐIỆN
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Họ Và Tên</label>
+                            <input id="hoTen" type="text" name="" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Số Điện đã dùng (Kw)</label>
+                            <input id="soKw" type="number" name="" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+
+
+                        </div>
+
+                    </div>
+                    <button id="btnTinhTienDien" class="btn btn-danger">Tính Tiền </button>
+                </div>
+                <div id="footerTinhTienDien" class="card-footer text-muted">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        TÍNH TIỀN THUẾ
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Họ Và Tên</label>
+                            <input id="hoTen1" type="text" name="" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Tổng Thu Nhập Năm</label>
+                            <input id="thuNhapNam" type="number" name="" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Số Người Phụ Thuộc</label>
+                            <input id="soNguoi" type="number" name="" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+
+
+                        </div>
+
+                    </div>
+                    <button id="btnTinhTienThue" class="btn btn-danger">Tính Tiền </button>
+                </div>
+                <div id="footerTinhTienThue" class="card-footer text-muted">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    TÍNH TIỀN CÁP
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="">Mã Khách Hàng</label>
+                        <input id="makh" type="text" name="" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+
+
+                    </div>
+                    
+                    <ul>
+                        <li class="type">
+                            <input type="radio" name="selector" id="nhadan">
+                            <label for="nhadan">Nhà dân</label>
+            
+                            <div class="check"></div>
+                        </li>
+            
+                        <li class="type">
+                            <input type="radio" name="selector" id="doanhnghiep">
+                            <label for="doanhnghiep">Doanh nghiệp</label>
+                            <div class="check"></div>
+                        </li>
+            
+                    </ul>
+
+                    <div class="form-group">
+                        <label for="">Số kênh kết nối</label>
+                        <input id="soKenh" type="number" name="" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Số kênh cao cấp</label>
+                        <input id="soKenhCaoCap" type="number" name="" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+
+
+                    </div>
+                    
+
+                </div>
+                <button id="btnTinhTienCap" class="btn btn-danger">Tính Tiền </button>
+            </div>
+            <div id="footerTinhTienCap" class="card-footer text-muted">
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
